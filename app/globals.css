@@ -3,24 +3,50 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Brand colors - to be updated when provided */
+  --primary: #1e3a8a; /* Dark blue placeholder */
+  --primary-dark: #1e40af;
+  --accent: #dc2626; /* Red placeholder for CTAs */
+  --text-primary: #171717;
+  --text-secondary: #4b5563;
+  --text-light: #6b7280;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-accent: var(--accent);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-light: var(--text-light);
+  --font-heading: var(--font-rethink-sans);
+  --font-body: var(--font-spectral);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-spectral), serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-rethink-sans), sans-serif;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+h1 {
+  font-weight: 700;
+}
+
+/* Hover effects for service cards */
+.group:hover h3 {
+  color: var(--primary) !important;
+}
+
+/* Hero slideshow transitions */
+.duration-600 {
+  transition-duration: 600ms;
 }

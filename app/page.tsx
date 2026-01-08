@@ -1,65 +1,131 @@
-import Image from "next/image";
+import Hero from "@/components/Hero";
+import ServiceCard from "@/components/ServiceCard";
+import WhyAOM from "@/components/WhyAOM";
+import HowItWorks from "@/components/HowItWorks";
+import CTASection from "@/components/CTASection";
+import Stats from "@/components/Stats";
+import { services, ctaTexts, stats } from "@/lib/constants";
+import type { HeroSlide } from "@/components/Hero";
+
+const heroSlides: HeroSlide[] = [
+  {
+    title: "AOM Industries",
+    subtitle: "Real Estate • Logistics • Petrochemical Supply",
+    description: "We provide dependable services across property, transportation, and energy products—built on safety, speed, and clear communication.",
+    primaryCTA: {
+      text: ctaTexts.requestQuote,
+      href: "/contact",
+    },
+    secondaryCTA: {
+      text: ctaTexts.speakToUs,
+      href: "/contact",
+    },
+    backgroundImage: "/industry.avif",
+  },
+  {
+    title: "Built for Execution",
+    subtitle: "Reliable • Professional • Efficient",
+    description: "We operate with structured processes, responsive communication, and a safety-first mindset—so you can plan confidently and get results without delays.",
+    primaryCTA: {
+      text: ctaTexts.requestQuote,
+      href: "/contact",
+    },
+    secondaryCTA: {
+      text: "Learn More",
+      href: "/about",
+    },
+    backgroundImage: "/petro.avif", // Replace with your second image
+  },
+  {
+    title: "Your Trusted Partner",
+    subtitle: "Safety • Speed • Clear Communication",
+    description: "Clear timelines, transparent documentation, and professional operations across real estate, logistics, and petrochemical supply.",
+    primaryCTA: {
+      text: ctaTexts.requestQuote,
+      href: "/contact",
+    },
+    secondaryCTA: {
+      text: "Our Services",
+      href: "/services",
+    },
+    backgroundImage: "/real3.avif", // Replace with your third image
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+    <>
+      <Hero slides={heroSlides} autoPlayInterval={12000} />
+
+      {/* Service Highlights */}
+      <section className="py-16 bg-[#f5f7f0]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Intro Text Section */}
+          <div className="text-center mb-12 max-w-4xl mx-auto">
+            {/* Small Heading with Underline */}
+            <div className="mb-4">
+              <h3 className="text-sm font-medium uppercase tracking-wide inline-block mb-2 pb-2 border-b-2 border-[#E3192E]">
+                Our services
+              </h3>
+            </div>
+
+            {/* Main Title */}
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight" style={{ color: 'var(--text-primary)' }}>
+              Comprehensive solutions for your business needs
+            </h2>
+
+            {/* Description Paragraph */}
+            <p className="text-base md:text-lg leading-relaxed max-w-3xl mx-auto" style={{ color: 'var(--text-secondary)' }}>
+              Our services provide high-quality solutions across real estate, logistics, and petrochemical supply, designed to keep your operations running smoothly and efficiently.
+            </p>
+          </div>
+
+          {/* Service Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <ServiceCard
+              title={services.realEstate.title}
+              description={services.realEstate.description}
+              href={services.realEstate.href}
+              image={services.realEstate.image}
+              features={services.realEstate.features}
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <ServiceCard
+              title={services.logistics.title}
+              description={services.logistics.description}
+              href={services.logistics.href}
+              image={services.logistics.image}
+              features={services.logistics.features}
+            />
+            <ServiceCard
+              title={services.petrochemicals.title}
+              description={services.petrochemicals.description}
+              href={services.petrochemicals.href}
+              image={services.petrochemicals.image}
+              features={services.petrochemicals.features}
+            />
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+
+      {/* Why AOM */}
+      <WhyAOM />
+
+      
+      {/* Stats Section */}
+      <Stats stats={stats} />
+
+      {/* HSE / Safety Section */}
+      <HowItWorks centerImage="/lgo.svg" centerImageAlt="AOM Industries Logo" />
+
+      {/* CTA Strip */}
+      <CTASection
+        title="Ready to get started?"
+        description="Tell us what you need and we'll respond with a clear plan and quote."
+        ctaText={ctaTexts.requestQuote}
+        ctaHref="/contact"
+        backgroundImage="/office.avif"
+      />
+    </>
   );
 }
