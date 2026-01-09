@@ -14,10 +14,10 @@ const heroSlides: HeroSlide[] = [
 export default function Clients() {
   return (
     <>
-      <Hero slides={heroSlides} />
+  
 
       {/* Clients Grid */}
-      <section className="py-16 bg-white">
+      <section className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
@@ -29,17 +29,17 @@ export default function Clients() {
           </div>
 
           {/* Clients Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
             {clients.map((client, index) => (
               <div
                 key={index}
-                className="relative aspect-square bg-gray-50 rounded-lg overflow-hidden flex items-center justify-center p-6 hover:shadow-lg transition-shadow duration-300 border border-gray-200"
+                className="relative aspect-square bg-gray-50 rounded-lg overflow-hidden flex items-center justify-center p-4 hover:shadow-lg transition-shadow duration-300 border border-gray-200"
               >
                 <Image
                   src={client.logo}
                   alt={client.name}
                   fill
-                  className="object-contain p-4"
+                  className="object-contain p-2"
                 />
               </div>
             ))}
@@ -48,10 +48,11 @@ export default function Clients() {
       </section>
 
       <CTASection
-        title="Interested in working with us?"
+        title="Ready to get started?"
         description="Join our growing list of satisfied clients."
         ctaText={ctaTexts.requestQuote}
         ctaHref="/contact"
+        backgroundImage="/aboutimage.png"
       />
     </>
   );

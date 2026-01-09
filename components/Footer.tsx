@@ -49,6 +49,14 @@ export default function Footer() {
                   {item.label}
                 </Link>
               ))}
+              {/* Services link - Footer only */}
+              <Link
+                href="/services"
+                className="text-sm hover:opacity-70 transition-opacity"
+                style={{ color: 'var(--text-secondary)' }}
+              >
+                Services
+              </Link>
             </div>
           </div>
 

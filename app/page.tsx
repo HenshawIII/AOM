@@ -124,7 +124,7 @@ export default function Home() {
         description="Tell us what you need and we'll respond with a clear plan and quote."
         ctaText={ctaTexts.requestQuote}
         ctaHref="/contact"
-        backgroundImage="/office.avif"
+        backgroundImage="/office.png"
       />
     </>
   );

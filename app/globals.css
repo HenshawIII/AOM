@@ -4,7 +4,7 @@
   --background: #ffffff;
   --foreground: #171717;
   /* Brand colors - to be updated when provided */
-  --primary: #1e3a8a; /* Dark blue placeholder */
+  --primary: #090f1f; /* Dark blue placeholder */
   --primary-dark: #1e40af;
   --accent: #dc2626; /* Red placeholder for CTAs */
   --text-primary: #171717;
@@ -43,7 +43,7 @@ h1 {
 
 /* Hover effects for service cards */
 .group:hover h3 {
-  color: var(--primary) !important;
+  color: #171717 !important;
 }
 
 /* Hero slideshow transitions */

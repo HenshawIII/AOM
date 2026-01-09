@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface HSEItem {
   title: string;
@@ -78,13 +79,22 @@ export default function HowItWorks({ centerImage, centerImageAlt = "HSE" }: HowI
 
             {/* Center Logo/Image - Desktop Only */}
             {centerImage && (
-              <div className="hidden lg:block lg:col-span-1 order-2 relative w-full h-64 lg:h-80">
-                <Image
-                  src={centerImage}
-                  alt={centerImageAlt}
-                  fill
-                  className="object-contain"
-                />
+              <div className="hidden lg:flex lg:col-span-1 order-2 flex-col items-center">
+                <div className="relative w-full h-64 lg:h-80">
+                  <Image
+                    src={centerImage}
+                    alt={centerImageAlt}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                {/* About Us Button - Desktop Only */}
+                <Link
+                  href="/about"
+                  className="mt-8 translate-y-12 inline-block px-8 py-4 text-white bg-[#E3192E] hover:bg-[#e31919]/90 transition-all duration-300 font-semibold rounded-md hover:opacity-90"
+                >
+                  About Us
+                </Link>
               </div>
             )}
 
@@ -108,6 +118,16 @@ export default function HowItWorks({ centerImage, centerImageAlt = "HSE" }: HowI
               </div>
             </div>
           </div>
+        </div>
+
+        {/* About Us Button - Mobile Only */}
+        <div className="lg:hidden text-center mt-12">
+          <Link
+            href="/about"
+            className="inline-block px-8 py-4 text-white bg-[#E3192E] hover:bg-[#e31919]/90 transition-all duration-300 font-semibold rounded-md hover:opacity-90"
+          >
+            About Us
+          </Link>
         </div>
       </div>
     </section>

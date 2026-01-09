@@ -187,7 +187,7 @@ export default function About() {
       <TeamSlider members={teamMembers} />
 
       {/* Mission & Values */}
-      <section className="py-16" style={{ backgroundColor: '#F5F7F0' }}>
+      <section className="py-16 pb-24" style={{ backgroundColor: '#F5F7F0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header Section */}
           <div className="mb-12 text-center">
@@ -210,9 +210,7 @@ export default function About() {
               <div className="flex items-start gap-4">
                 {/* Icon */}
                 <div className="shrink-0 mt-1">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" style={{ color: '#d1fae5' }}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
-                  </svg>
+                 <Image src="/comp.svg" alt="Comprehensive Approach" width={32} height={32} />
                 </div>
                 {/* Content */}
                 <div className="flex-1">
@@ -231,7 +229,7 @@ export default function About() {
               <div className="flex items-start gap-4">
                 {/* Icon */}
                 <div className="shrink-0 mt-1">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" style={{ color: '#d1fae5' }}>
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" style={{ color: '#efdee0' }}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.944 11.944 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
                   </svg>
                 </div>
@@ -252,9 +250,7 @@ export default function About() {
               <div className="flex items-start gap-4">
                 {/* Icon */}
                 <div className="shrink-0 mt-1">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" style={{ color: '#d1fae5' }}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655-5.653a2.548 2.548 0 010-3.586l4.94-4.94a2.548 2.548 0 013.586 0l4.94 4.94a2.548 2.548 0 010 3.586l-5.653 4.655z" />
-                  </svg>
+                  <Image src="/standard.svg" alt="Modern Standards" width={32} height={32} />
                 </div>
                 {/* Content */}
                 <div className="flex-1">
@@ -273,9 +269,7 @@ export default function About() {
               <div className="flex items-start gap-4">
                 {/* Icon */}
                 <div className="shrink-0 mt-1">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" style={{ color: '#d1fae5' }}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21a11.944 11.944 0 01-8.11-5.999 12.075 12.075 0 01-.665-6.239A3 3 0 004.682 15.72m.94 3.198A9.094 9.094 0 0112 21.75c2.34 0 4.518-.741 6.06-2.03m-6.06 0a9.011 9.011 0 01-1.5-1.5m6.06 0a9.011 9.011 0 001.5-1.5M15 18.75a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
+                 <Image src="/profTeam.svg" alt="Professional Team" width={32} height={32} />
                 </div>
                 {/* Content */}
                 <div className="flex-1">

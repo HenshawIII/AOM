@@ -120,14 +120,12 @@ export const stats = [
 ];
 
 export const clients = [
-  { name: "Client 1", logo: "/clients/client1.png" },
-  { name: "Client 2", logo: "/clients/client2.png" },
-  { name: "Client 3", logo: "/clients/client3.png" },
-  { name: "Client 4", logo: "/clients/client4.png" },
-  { name: "Client 5", logo: "/clients/client5.png" },
-  { name: "Client 6", logo: "/clients/client6.png" },
-  { name: "Client 7", logo: "/clients/client7.png" },
-  { name: "Client 8", logo: "/clients/client8.png" },
+  { name: "Midas", logo: "/MIDASII.png" },
+  { name: "Afloat", logo: "/AFLOAT.png" },
+  { name: "Ibwas", logo: "/IBWAS.jpg" },
+  { name: "Nepal", logo: "/NEPAL.JPG" },
+  { name: "Lafarge", logo: "/LAFARGE.png" },
+ 
 ];
 
 export type TeamMember = {
