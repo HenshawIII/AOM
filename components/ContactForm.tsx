@@ -257,8 +257,6 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        type="submit"
-        disabled={isSubmitting}
         className="w-full md:w-auto px-8 py-3 text-white font-semibold rounded-md transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         style={{ backgroundColor: 'var(--accent)' }}
         onMouseEnter={(e) => {
