@@ -84,7 +84,7 @@ export default function Services() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
 
-          <FadeInOnScroll direction="left" delay={0.1}>
+          
           <ServiceCard
               title={services.logistics.title}
               description={services.logistics.description}
@@ -92,8 +92,7 @@ export default function Services() {
               image={services.logistics.image}
               features={services.logistics.features}
             />
-            </FadeInOnScroll>
-            <FadeInOnScroll direction="up" delay={0.2}>
+            
             <ServiceCard
               title={services.petrochemicals.title}
               description={services.petrochemicals.description}
@@ -101,8 +100,6 @@ export default function Services() {
               image={services.petrochemicals.image}
               features={services.petrochemicals.features}
             />
-            </FadeInOnScroll>
-            <FadeInOnScroll direction="right" delay={0.3}>
             <ServiceCard
               title={services.realEstate.title}
               description={services.realEstate.description}
@@ -110,7 +107,6 @@ export default function Services() {
               image={services.realEstate.image}
               features={services.realEstate.features}
             />
-            </FadeInOnScroll>
           </div>
         </div>
       </section>
