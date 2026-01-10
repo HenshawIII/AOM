@@ -1,4 +1,5 @@
 import CTASection from "@/components/CTASection";
+import FadeInOnScroll from "@/components/FadeInOnScroll";
 import { ctaTexts } from "@/lib/constants";
 import Image from "next/image";
 
@@ -16,7 +17,7 @@ export default function Logistics() {
         </div>
 
         {/* Left Image Panel */}
-        <div className="absolute left-0 bottom-0 w-1/6 hidden lg:block">
+        {/* <div className="absolute left-0 bottom-0 w-1/6 hidden lg:block">
           <div className="relative h-full w-full">
             <Image
               src="/industry.avif"
@@ -25,10 +26,10 @@ export default function Logistics() {
               className="object-cover"
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Right Image Panel */}
-        <div className="absolute right-0 bottom-0 w-1/6 hidden lg:block">
+        {/* <div className="absolute right-0 bottom-0 w-1/6 hidden lg:block">
           <div className="relative h-full w-full">
             <Image
               src="/petro.avif"
@@ -37,21 +38,25 @@ export default function Logistics() {
               className="object-cover"
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Centered Content */}
         <div className="z-10 max-w-7xl mx-auto text-left px-4 sm:px-6 lg:px-8">
           <div className="mb-6">
+            <FadeInOnScroll direction="up" delay={0.1}>
             <h3 className="text-white! text-lg md:text-xl border-b-2 border-white font-medium relative inline-block pb-3">
               Logistics
             </h3>
+            </FadeInOnScroll>
           </div>
 
           {/* Main Headline */}
           <div className="w-full">
+            <FadeInOnScroll delay={0.2} direction="up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl text-white! leading-tight lg:max-w-[70%]">
               Moving goods with speed, care, and clear delivery updates
             </h1>
+            </FadeInOnScroll>
           </div>
         </div>
       </section>
@@ -60,21 +65,29 @@ export default function Logistics() {
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
+            <FadeInOnScroll direction="up" delay={0.2}>
             <p className="text-lg leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
               We provide logistics support designed for reliability—planned timelines, structured operations, and responsive communication. Our logistics services ensure that your goods are transported safely, efficiently, and on schedule across Nigeria, with clear updates throughout the delivery process.
             </p>
+            </FadeInOnScroll>
+            <FadeInOnScroll direction="up" delay={0.3}>
             <p className="text-lg leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
               From initial planning and route optimization to final delivery confirmation, we manage every aspect of your logistics needs. Our team coordinates pickup schedules, tracks shipments in transit, and provides proof of delivery documentation. We work with reliable transportation partners and maintain strict safety standards to ensure your cargo arrives in perfect condition.
             </p>
+            </FadeInOnScroll>
+            <FadeInOnScroll direction="up" delay={0.4}>
             <p className="text-lg leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
               Whether you need local deliveries within a city or regional transportation across states, we plan routes carefully, communicate proactively, and deliver with accountability. Our structured approach means you always know where your shipment is and when it will arrive.
             </p>
+            </FadeInOnScroll>
+
           </div>
         </div>
       </section>
 
       {/* What We Offer */}
       <section className="py-16 bg-[#f5f7f0]">
+        <FadeInOnScroll delay={0.2} direction="left">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-8" style={{ color: 'var(--text-primary)' }}>
             What We Offer
@@ -150,6 +163,7 @@ export default function Logistics() {
             </li>
           </ul>
         </div>
+        </FadeInOnScroll>
       </section>
 
       <CTASection

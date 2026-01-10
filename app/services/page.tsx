@@ -2,6 +2,7 @@ import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
 import { services, ctaTexts } from "@/lib/constants";
 import Image from "next/image";
+import FadeInOnScroll from "@/components/FadeInOnScroll";
 
 export default function Services() {
   return (
@@ -42,18 +43,21 @@ export default function Services() {
 
         {/* Centered Content */}
         <div className="z-10 max-w-7xl mx-auto text-left px-4 sm:px-6 lg:px-8">
+          <FadeInOnScroll direction="up" delay={0.1}>
           <div className="mb-6">
             <h3 className="text-white! text-lg md:text-xl border-b-2 border-white font-medium relative inline-block pb-3">
               Our Services
             </h3>
           </div>
-
+          </FadeInOnScroll> 
           {/* Main Headline */}
+          <FadeInOnScroll direction="up" delay={0.2}>
           <div className="w-full">
             <h1 className="text-4xl md:text-5xl lg:text-6xl text-white! leading-tight lg:max-w-[70%]">
               Three core service areas designed for real-world execution
             </h1>
           </div>
+          </FadeInOnScroll>
         </div>
       </section>
 
@@ -61,12 +65,16 @@ export default function Services() {
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
+            <FadeInOnScroll direction="up" delay={0.3}>
             <p className="text-lg leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
               Choose the service you need. We'll confirm requirements, share a quote, and execute with clear updates. Our approach is straightforward: you tell us what you need, we provide a clear plan and pricing, and we deliver with structured communication throughout the process.
             </p>
+            </FadeInOnScroll>
+            <FadeInOnScroll direction="up" delay={0.2}>
             <p className="text-lg leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
               Whether you're looking for property solutions, reliable logistics support, or consistent petrochemical supply, we operate with the same principles: structured processes, responsive communication, and dependable execution. Our team brings expertise across all three service areas, ensuring you get professional support tailored to your specific needs.
             </p>
+            </FadeInOnScroll>
           </div>
         </div>
       </section>
@@ -74,8 +82,9 @@ export default function Services() {
       {/* Service Cards */}
       <section className="py-16 bg-[#f5f7f0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
 
+          <FadeInOnScroll direction="left" delay={0.1}>
           <ServiceCard
               title={services.logistics.title}
               description={services.logistics.description}
@@ -83,6 +92,8 @@ export default function Services() {
               image={services.logistics.image}
               features={services.logistics.features}
             />
+            </FadeInOnScroll>
+            <FadeInOnScroll direction="up" delay={0.2}>
             <ServiceCard
               title={services.petrochemicals.title}
               description={services.petrochemicals.description}
@@ -90,6 +101,8 @@ export default function Services() {
               image={services.petrochemicals.image}
               features={services.petrochemicals.features}
             />
+            </FadeInOnScroll>
+            <FadeInOnScroll direction="right" delay={0.3}>
             <ServiceCard
               title={services.realEstate.title}
               description={services.realEstate.description}
@@ -97,11 +110,12 @@ export default function Services() {
               image={services.realEstate.image}
               features={services.realEstate.features}
             />
-            
+            </FadeInOnScroll>
           </div>
         </div>
       </section>
 
+      
       <CTASection
         title="Need a quote?"
         description="Tell us what you need and we'll respond with a clear plan and quote."
@@ -109,6 +123,7 @@ export default function Services() {
         ctaHref="/contact"
         backgroundImage="/office.avif"
       />
+    
     </>
   );
 }

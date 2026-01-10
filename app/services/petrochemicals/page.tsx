@@ -1,4 +1,5 @@
 import CTASection from "@/components/CTASection";
+import FadeInOnScroll from "@/components/FadeInOnScroll";
 import { ctaTexts } from "@/lib/constants";
 import Image from "next/image";
 
@@ -44,16 +45,20 @@ export default function Petrochemicals() {
         {/* Centered Content */}
         <div className="z-10 max-w-7xl mx-auto text-left px-4 sm:px-6 lg:px-8">
           <div className="mb-6">
+            <FadeInOnScroll direction="up" delay={0.1}>
             <h3 className="text-white! text-lg md:text-xl border-b-2 border-white font-medium relative inline-block pb-3">
               Petrochemicals
             </h3>
+            </FadeInOnScroll>
           </div>
 
           {/* Main Headline */}
           <div className="w-full">
+            <FadeInOnScroll delay={0.2} direction="up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl text-white! leading-tight lg:max-w-[70%]">
               Reliable supply for commercial and industrial needs
             </h1>
+            </FadeInOnScroll>
           </div>
         </div>
       </section>
@@ -62,21 +67,29 @@ export default function Petrochemicals() {
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
+            <FadeInOnScroll direction="up" delay={0.2}>
             <p className="text-lg leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
               We supply petrochemical products with structured order processing, delivery coordination, and clear communication on timelines and availability. Our petrochemical supply services provide consistent access to high-quality energy products for commercial and industrial operations across Nigeria.
             </p>
+            </FadeInOnScroll>
+            <FadeInOnScroll direction="up" delay={0.3}>
             <p className="text-lg leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
               We maintain reliable supply chains for Premium Motor Spirit (PMS), Automotive Gas Oil (AGO/Diesel), Low Pour Fuel Oil (LPFO), and Ethanol, ensuring your operations never face interruptions due to fuel shortages. Our structured approach includes inventory management, quality assurance, and timely delivery coordination.
             </p>
+            </FadeInOnScroll>
+            <FadeInOnScroll direction="up" delay={0.4}>
             <p className="text-lg leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
               When you place an order, we confirm product availability, provide transparent pricing, and schedule delivery according to your timeline. We handle all coordination with suppliers and transportation partners, keeping you informed throughout the process. Our commitment to safety and compliance ensures all products meet industry standards and regulatory requirements.
             </p>
+            </FadeInOnScroll>
+
           </div>
         </div>
       </section>
 
       {/* Products We Supply */}
       <section className="py-16 bg-[#f5f7f0]">
+        <FadeInOnScroll delay={0.2} direction="left">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-8" style={{ color: 'var(--text-primary)' }}>
             Products We Supply
@@ -106,6 +119,7 @@ export default function Petrochemicals() {
             ))}
           </div>
         </div>
+        </FadeInOnScroll>
       </section>
 
       <CTASection

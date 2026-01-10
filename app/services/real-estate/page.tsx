@@ -1,4 +1,5 @@
 import CTASection from "@/components/CTASection";
+import FadeInOnScroll from "@/components/FadeInOnScroll";
 import { ctaTexts } from "@/lib/constants";
 import Image from "next/image";
 
@@ -42,16 +43,20 @@ export default function RealEstate() {
         {/* Centered Content */}
         <div className="z-10 max-w-7xl mx-auto text-left px-4 sm:px-6 lg:px-8">
           <div className="mb-6">
+            <FadeInOnScroll direction="up" delay={0.1}>
             <h3 className="text-white! text-lg md:text-xl border-b-2 border-white font-medium relative inline-block pb-3">
               Real Estate
             </h3>
+            </FadeInOnScroll>
           </div>
 
           {/* Main Headline */}
           <div className="w-full">
+            <FadeInOnScroll delay={0.2} direction="up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl text-white! leading-tight lg:max-w-[70%]">
-              Property solutions you can trust—from sourcing to closing
+              Property solutions you can trust , from sourcing to closing
             </h1>
+            </FadeInOnScroll>
           </div>
         </div>
       </section>
@@ -60,21 +65,29 @@ export default function RealEstate() {
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
+            <FadeInOnScroll direction="up" delay={0.2}>
             <p className="text-lg leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
               We support clients with real estate transactions and property needs through a structured, professional process. From property sourcing and acquisition to leasing, management, and advisory services, we handle every aspect with attention to detail and clear communication.
             </p>
+            </FadeInOnScroll>
+            <FadeInOnScroll direction="up" delay={0.3}>
             <p className="text-lg leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
-              Our real estate services are designed to make property transactions straightforward and transparent. We conduct thorough property inspections, provide detailed documentation, and guide you through each step—from initial inquiry to final closing. Whether you're buying, selling, leasing, or managing properties, we ensure all processes are handled professionally and efficiently.
+              Our real estate services are designed to make property transactions straightforward and transparent. We conduct thorough property inspections, provide detailed documentation, and guide you through each step , from initial inquiry to final closing. Whether you're buying, selling, leasing, or managing properties, we ensure all processes are handled professionally and efficiently.
             </p>
+            </FadeInOnScroll>
+            <FadeInOnScroll direction="up" delay={0.4}>
             <p className="text-lg leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
               With experience across residential, commercial, and industrial properties, we understand the unique requirements of different property types and can provide tailored solutions that meet your specific needs and timeline.
             </p>
+            </FadeInOnScroll>
+
           </div>
         </div>
       </section>
 
       {/* What We Offer */}
       <section className="py-16 bg-[#f5f7f0]">
+        <FadeInOnScroll delay={0.2} direction="left">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-8" style={{ color: 'var(--text-primary)' }}>
             What We Offer
@@ -167,6 +180,7 @@ export default function RealEstate() {
             </li>
           </ul>
         </div>
+        </FadeInOnScroll>
       </section>
 
       <CTASection

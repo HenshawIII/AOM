@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import FadeInOnScroll from "./FadeInOnScroll";
 
 export interface HeroSlide {
   title: string;
@@ -126,6 +127,7 @@ export default function Hero({ slides, autoPlayInterval = 12000 }: HeroProps) {
           } ${hasBackground ? "text-white" : ""}`}
         >
           {slide.subtitle && (
+            <FadeInOnScroll direction="up" delay={0.1}>
             <p
               className="text-sm font-medium mb-4 uppercase tracking-wide"
               style={{
@@ -134,6 +136,7 @@ export default function Hero({ slides, autoPlayInterval = 12000 }: HeroProps) {
             >
               {slide.subtitle}
             </p>
+            </FadeInOnScroll>
           )}
           <h1
             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
@@ -142,6 +145,7 @@ export default function Hero({ slides, autoPlayInterval = 12000 }: HeroProps) {
             {slide.title}
           </h1>
           {slide.description && (
+            <FadeInOnScroll direction="up" delay={0.2}>
             <p
               className="text-md md:text-lg mb-8 leading-relaxed"
               style={{
@@ -150,8 +154,10 @@ export default function Hero({ slides, autoPlayInterval = 12000 }: HeroProps) {
             >
               {slide.description}
             </p>
+            </FadeInOnScroll>
           )}
           {(slide.primaryCTA || slide.secondaryCTA) && (
+            <FadeInOnScroll direction="up" delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4">
               {slide.primaryCTA && (
                 <Link
@@ -174,10 +180,12 @@ export default function Hero({ slides, autoPlayInterval = 12000 }: HeroProps) {
                 </Link>
               )}
             </div>
+            </FadeInOnScroll>
           )}
 
           {/* Dot Navigation */}
           {slides.length > 1 && (
+            <FadeInOnScroll direction="up" delay={0.4}>
             <div className="flex gap-2 mt-8">
               {slides.map((_, index) => (
                 <button
@@ -192,6 +200,7 @@ export default function Hero({ slides, autoPlayInterval = 12000 }: HeroProps) {
                 />
               ))}
             </div>
+            </FadeInOnScroll>
           )}
         </div>
       </div>

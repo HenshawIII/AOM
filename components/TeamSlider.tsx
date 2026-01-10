@@ -70,7 +70,7 @@ export default function TeamSlider({ members }: TeamSliderProps) {
         {/* Slider Container */}
         <div className="relative">
           {/* Desktop: Grid layout showing 3 cards */}
-          <div className="hidden md:grid md:grid-cols-3 gap-8">
+          <div className="hidden md:grid md:grid-cols-3 gap-4 lg:gap-8">
             {visibleMembers.map((member, index) => (
               <TeamCard key={`${currentIndex}-${index}`} member={member} />
             ))}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import FadeInOnScroll from "./FadeInOnScroll";
 
 interface HSEItem {
   title: string;
@@ -35,17 +36,18 @@ export default function HowItWorks({ centerImage, centerImageAlt = "HSE" }: HowI
     <section className="py-16 lg:pb-32 bg-gradient-to-b from-white/50 to-[#f5f7f0] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
+        <FadeInOnScroll direction="up" delay={0.1}>
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold  leading-tight max-w-4xl mx-auto" style={{ color: 'var(--text-primary)' }}>
             Our Commitment to Safety and Responsibility
           </h2>
         </div>
-
+        </FadeInOnScroll>
         {/* Main Content Area */}
         <div className="relative">
           {/* Mobile: Image as Background */}
           {centerImage && (
-            <div className="md:hidden absolute inset-0 opacity-10">
+            <div className="lg:hidden absolute inset-0 opacity-10">
               <Image
                 src={centerImage}
                 alt={centerImageAlt}
@@ -59,6 +61,7 @@ export default function HowItWorks({ centerImage, centerImageAlt = "HSE" }: HowI
           <div className="relative grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center">
             {/* Left Column */}
             <div className="lg:col-span-1 space-y-8 order-2 lg:order-1">
+            <FadeInOnScroll direction="left" delay={0.1}>
               <div>
                 <h3 className="text-xl md:text-2xl font-bold mb-3" style={{ color: 'var(--text-primary)' }}>
                   {hseContent[0].title}
@@ -75,6 +78,7 @@ export default function HowItWorks({ centerImage, centerImageAlt = "HSE" }: HowI
                   {hseContent[1].description}
                 </p>
               </div>
+              </FadeInOnScroll>
             </div>
 
             {/* Center Logo/Image - Desktop Only */}
@@ -100,6 +104,7 @@ export default function HowItWorks({ centerImage, centerImageAlt = "HSE" }: HowI
 
             {/* Right Column */}
             <div className="lg:col-span-1 space-y-8 order-3">
+            <FadeInOnScroll direction="right" delay={0.2}>
               <div>
                 <h3 className="text-xl md:text-2xl font-bold mb-3" style={{ color: 'var(--text-primary)' }}>
                   {hseContent[2].title}
@@ -116,6 +121,7 @@ export default function HowItWorks({ centerImage, centerImageAlt = "HSE" }: HowI
                   {hseContent[3].description}
                 </p>
               </div>
+              </FadeInOnScroll>
             </div>
           </div>
         </div>

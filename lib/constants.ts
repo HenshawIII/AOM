@@ -11,9 +11,10 @@ export const navigationItems: NavigationItem[] = [
     label: "Our Businesses", 
     href: "/services",
     dropdown: [
-      { label: "Real Estate", href: "/services/real-estate" },
       { label: "Logistics", href: "/services/logistics" },
       { label: "Petrochemicals", href: "/services/petrochemicals" },
+      { label: "Real Estate", href: "/services/real-estate" },
+     
     ]
   },
   { label: "Our Clients", href: "/clients" },
@@ -35,15 +36,14 @@ export const services = {
   },
   petrochemicals: {
     title: "Petrochemical Supply & Haulage",
-    description: "Specialized petrochemical haulage and distribution services for PMS, AGO, LPFO, and Ethanol, ensuring safe and efficient transportation for commercial and industrial needs.",
+    description: "Specialized petrochemical haulage and distribution services for PMS, AGO, LPFO, and Ethanol, ensuring safe and efficient transportation.",
     href: "/services/petrochemicals",
     image: "/petro.avif",
     features: [
       "Petrochemical Haulage & Transportation",
-      "PMS (Premium Motor Spirit) Supply & Distribution",
+      "PMS Supply & Distribution",
       "AGO (Diesel) Haulage & Delivery",
       "LPFO & Industrial Fuel Transportation",
-      
     ],
   },
   realEstate: {
