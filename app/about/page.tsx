@@ -64,7 +64,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-5xl">
             <p className="text-lg mb-6 leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-              Founded in 2010 in Nigeria, AOM Industries has grown from a local operation to a trusted multi-industry service provider. Over the years, we have built a reputation for excellence across real estate, logistics, and petrochemical sales & supply. Our commitment to dependable delivery, professional service, and a straightforward process from first contact to final confirmation has been the cornerstone of our success.
+              Founded in 2022 in Nigeria, AOM Industries has grown from a local operation to a trusted multi-industry service provider. Over the years, we have built a reputation for excellence across real estate, logistics, and petrochemical sales & supply. Our commitment to dependable delivery, professional service, and a straightforward process from first contact to final confirmation has been the cornerstone of our success.
             </p>
             <p className="text-lg mb-6 leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
               We work with individuals and businesses that value structure, accountability, and timely execution. Our deep understanding of the Nigerian market, combined with international best practices, allows us to deliver solutions that are both locally relevant and globally competitive.

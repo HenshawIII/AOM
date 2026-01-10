@@ -21,6 +21,31 @@ export const navigationItems: NavigationItem[] = [
 ];
 
 export const services = {
+  logistics: {
+    title: "Logistics",
+    description: "Specialized solid mineral haulage and heavy-duty transportation services with planned and timely movement, clear updates, and accountable delivery.",
+    href: "/services/logistics",
+    image: "/industry.avif",
+    features: [
+      "Solid Mineral Haulage & Transportation",
+      "Heavy-Duty Cargo Movement",
+      "Warehouse & Storage Solutions",
+      "Delivery Tracking & Updates",
+    ],
+  },
+  petrochemicals: {
+    title: "Petrochemical Supply & Haulage",
+    description: "Specialized petrochemical haulage and distribution services for PMS, AGO, LPFO, and Ethanol, ensuring safe and efficient transportation for commercial and industrial needs.",
+    href: "/services/petrochemicals",
+    image: "/petro.avif",
+    features: [
+      "Petrochemical Haulage & Transportation",
+      "PMS (Premium Motor Spirit) Supply & Distribution",
+      "AGO (Diesel) Haulage & Delivery",
+      "LPFO & Industrial Fuel Transportation",
+      
+    ],
+  },
   realEstate: {
     title: "Real Estate",
     description: "Property sales, leasing, management, and advisory—handled professionally from inspection to closing.",
@@ -32,31 +57,8 @@ export const services = {
       "Property Valuation & Advisory",
       "Real Estate Investment Consulting",
     ],
-  },
-  logistics: {
-    title: "Logistics",
-    description: "Planned and timely movement of goods with clear updates and accountable delivery.",
-    href: "/services/logistics",
-    image: "/industry.avif",
-    features: [
-      "Freight & Cargo Transportation",
-      "Warehouse & Storage Solutions",
-      "Supply Chain Management",
-      "Delivery Tracking & Updates",
-    ],
-  },
-  petrochemicals: {
-    title: "Petrochemical Sales & Supply",
-    description: "Supply of PMS, AGO, LPFO, and Ethanol for commercial and industrial needs.",
-    href: "/services/petrochemicals",
-    image: "/petro.avif",
-    features: [
-      "PMS (Premium Motor Spirit) Supply",
-      "AGO (Diesel) Distribution",
-      "LPFO & Industrial Fuels",
-      "Ethanol & Specialty Products",
-    ],
-  },
+  }
+ 
 };
 
 export const whyAOMFeatures = [
@@ -106,24 +108,24 @@ export const ctaTexts = {
 
 export const stats = [
   {
-    number: "500+",
-    description: "We supply over 500 tonnes of petrochemicals annually",
+    number: "100+",
+    description: "We supply over 100 tonnes of petrochemicals annually",
   },
   {
-    number: "10+",
-    description: "With over 10 years experience across industries",
+    number: "5+",
+    description: "With over 5 years experience across industries",
   },
   {
-    number: "50+",
-    description: "Over 50 properties nation wide in our portfolio",
+    number: "30+",
+    description: "Over 30 properties developed nation wide",
   },
 ];
 
 export const clients = [
-  { name: "Midas", logo: "/MIDASII.png" },
+  { name: "Midas", logo: "/MIDAI.png" },
   { name: "Afloat", logo: "/AFLOAT.png" },
-  { name: "Ibwas", logo: "/IBWAS.jpg" },
-  { name: "Nepal", logo: "/NEPAL.JPG" },
+  { name: "Ibwas", logo: "/IBWA.png" },
+  { name: "Nepal", logo: "/NEPA.png" },
   { name: "Lafarge", logo: "/LAFARGE.png" },
  
 ];
@@ -143,21 +145,21 @@ export const teamMembers: TeamMember[] = [
     linkedinUrl: "https://linkedin.com/in/mike-jones",
   },
   {
-    name: "Iyawo Akinyemi",
+    name: "Akinyemi Aminat",
     role: "Procurement Officer",
     image: "/iyawoFemi.png",
     linkedinUrl: "https://linkedin.com/in/emily-carter",
   },
   {
     name: "Henshaw Immanuel",
-    role: "Chief Financial Officer",
-    image: "/Henshaws.png",
+    role: "Chief Technology Officer",
+    image: "/cTn.png",
     linkedinUrl: "https://linkedin.com/in/sarah-johnson",
   },
   {
-    name: "Oluwaseyi Ajayi",  
+    name: "Afeaye Ernest",  
     role: "Logistics Officer",
-    image: "/MrLog.png",
+    image: "/MrLo.png",
     linkedinUrl: "https://linkedin.com/in/sarah-johnson",
   },
 ];

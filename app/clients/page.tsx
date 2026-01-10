@@ -29,11 +29,11 @@ export default function Clients() {
           </div>
 
           {/* Clients Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-12">
             {clients.map((client, index) => (
               <div
                 key={index}
-                className="relative aspect-square bg-gray-50 rounded-lg overflow-hidden flex items-center justify-center p-4 hover:shadow-lg transition-shadow duration-300 border border-gray-200"
+                className="relative aspect-square rounded-lg overflow-hidden flex items-center justify-center p-2 hover:shadow-lg transition-shadow duration-300"
               >
                 <Image
                   src={client.logo}

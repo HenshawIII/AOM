@@ -75,14 +75,8 @@ export default function Services() {
       <section className="py-16 bg-[#f5f7f0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <ServiceCard
-              title={services.realEstate.title}
-              description={services.realEstate.description}
-              href={services.realEstate.href}
-              image={services.realEstate.image}
-              features={services.realEstate.features}
-            />
-            <ServiceCard
+
+          <ServiceCard
               title={services.logistics.title}
               description={services.logistics.description}
               href={services.logistics.href}
@@ -96,6 +90,14 @@ export default function Services() {
               image={services.petrochemicals.image}
               features={services.petrochemicals.features}
             />
+            <ServiceCard
+              title={services.realEstate.title}
+              description={services.realEstate.description}
+              href={services.realEstate.href}
+              image={services.realEstate.image}
+              features={services.realEstate.features}
+            />
+            
           </div>
         </div>
       </section>

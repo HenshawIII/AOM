@@ -10,7 +10,7 @@ import type { HeroSlide } from "@/components/Hero";
 const heroSlides: HeroSlide[] = [
   {
     title: "AOM Industries",
-    subtitle: "Real Estate • Logistics • Petrochemical Supply",
+    subtitle: "Logistics • Petrochemical Supply • Real Estate",
     description: "We provide dependable services across property, transportation, and energy products—built on safety, speed, and clear communication.",
     primaryCTA: {
       text: ctaTexts.requestQuote,
@@ -82,14 +82,7 @@ export default function Home() {
 
           {/* Service Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <ServiceCard
-              title={services.realEstate.title}
-              description={services.realEstate.description}
-              href={services.realEstate.href}
-              image={services.realEstate.image}
-              features={services.realEstate.features}
-            />
-            <ServiceCard
+          <ServiceCard
               title={services.logistics.title}
               description={services.logistics.description}
               href={services.logistics.href}
@@ -103,6 +96,14 @@ export default function Home() {
               image={services.petrochemicals.image}
               features={services.petrochemicals.features}
             />
+            <ServiceCard
+              title={services.realEstate.title}
+              description={services.realEstate.description}
+              href={services.realEstate.href}
+              image={services.realEstate.image}
+              features={services.realEstate.features}
+            />
+            
           </div>
         </div>
       </section>
