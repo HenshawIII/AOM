@@ -40,7 +40,7 @@ const heroSlides: HeroSlide[] = [
   {
     title: "Your Trusted Partner",
     subtitle: "Safety • Speed • Clear Communication",
-    description: "Clear timelines, transparent documentation, and professional operations across real estate, logistics, and petrochemical supply.",
+    description: "Clear timelines, transparent documentation, and professional operations across logistics, petrochemical supply, and real estate.",
     primaryCTA: {
       text: ctaTexts.requestQuote,
       href: "/contact",
@@ -78,7 +78,7 @@ export default function Home() {
 
               {/* Description Paragraph */}
               <p className="text-base md:text-lg leading-relaxed max-w-3xl mx-auto" style={{ color: 'var(--text-secondary)' }}>
-                Our services provide high-quality solutions across real estate, logistics, and petrochemical supply, designed to keep your operations running smoothly and efficiently.
+                Our services provide high-quality solutions across logistics, petrochemical supply, and real estate, designed to keep your operations running smoothly and efficiently.
               </p>
             </div>
           </FadeInOnScroll>

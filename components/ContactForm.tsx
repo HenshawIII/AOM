@@ -186,9 +186,9 @@ export default function ContactForm() {
             }`}
           >
             <option value="">Select a service</option>
-            <option value="real-estate">Real Estate</option>
             <option value="logistics">Logistics</option>
             <option value="petrochemicals">Petrochemicals</option>
+            <option value="real-estate">Real Estate</option>
           </select>
           {errors.service && (
             <p className="mt-1 text-sm text-red-500">{errors.service}</p>

@@ -23,12 +23,12 @@ export default function WhyAOM() {
 
             {/* Paragraph 1 */}
             <p className="text-md leading-normal" style={{ color: 'var(--text-secondary)' }}>
-              We specialize in providing comprehensive real estate, logistics, and petrochemical supply services, designed to keep your operations running smoothly, efficiently, and with complete transparency.
+              We specialize in providing comprehensive logistics, petrochemical supply, and real estate services, designed to keep your operations running smoothly, efficiently, and with complete transparency.
             </p>
 
             {/* Paragraph 2 */}
             <p className="text-md leading-normal" style={{ color: 'var(--text-secondary)' }}>
-              Our services provide high-quality solutions, ranging from property management and sales to timely logistics delivery and reliable energy product supply for commercial and industrial needs.
+              Our services provide high-quality solutions, ranging from timely logistics delivery to reliable energy product supply to property management and sales for commercial and industrial needs.
             </p>
 
             {/* CTA Button */}

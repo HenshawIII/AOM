@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import emailjs from "@emailjs/browser";
 import CTASection from "@/components/CTASection";
 import FadeInOnScroll from "@/components/FadeInOnScroll";
 import { contactInfo } from "@/lib/constants";
@@ -15,6 +16,7 @@ export default function Contact() {
 
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"success" | "error" | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -45,16 +47,52 @@ export default function Contact() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (validate()) {
-      setIsSubmitting(true);
-      console.log("Form submitted:", formData);
+    if (!validate()) {
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    // EmailJS configuration
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "";
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "";
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "";
+
+    if (!serviceId || !templateId || !publicKey) {
+      console.error("EmailJS configuration is missing. Please set up environment variables.");
+      setSubmitStatus("error");
+      setIsSubmitting(false);
+      return;
+    }
+
+    try {
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          to_email: contactInfo.email,
+        },
+        publicKey
+      );
+
+      setSubmitStatus("success");
+      setFormData({ name: "", email: "", message: "" });
+      
+      // Reset status message after 5 seconds
       setTimeout(() => {
-        alert("Thank you for your message! We'll get back to you soon.");
-        setFormData({ name: "", email: "", message: "" });
-        setIsSubmitting(false);
-      }, 500);
+        setSubmitStatus(null);
+      }, 5000);
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -212,6 +250,22 @@ export default function Contact() {
               >
                 {isSubmitting ? "Submitting..." : "SUBMIT"}
               </button>
+
+              {/* Status Messages */}
+              {submitStatus === "success" && (
+                <div className="p-4 bg-green-50 border border-green-200 rounded-md">
+                  <p className="text-sm text-green-800">
+                    Thank you for your message! We'll get back to you soon.
+                  </p>
+                </div>
+              )}
+              {submitStatus === "error" && (
+                <div className="p-4 bg-red-50 border border-red-200 rounded-md">
+                  <p className="text-sm text-red-800">
+                    Something went wrong. Please try again or contact us directly at {contactInfo.email}.
+                  </p>
+                </div>
+              )}
             </form>
             </div>
             </FadeInOnScroll>

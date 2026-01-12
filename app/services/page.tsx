@@ -72,7 +72,7 @@ export default function Services() {
             </FadeInOnScroll>
             <FadeInOnScroll direction="up" delay={0.2}>
             <p className="text-lg leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-              Whether you're looking for property solutions, reliable logistics support, or consistent petrochemical supply, we operate with the same principles: structured processes, responsive communication, and dependable execution. Our team brings expertise across all three service areas, ensuring you get professional support tailored to your specific needs.
+              Whether you're looking for reliable logistics support, consistent petrochemical supply, or property solutions, we operate with the same principles: structured processes, responsive communication, and dependable execution. Our team brings expertise across all three service areas, ensuring you get professional support tailored to your specific needs.
             </p>
             </FadeInOnScroll>
           </div>

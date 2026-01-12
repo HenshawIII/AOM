@@ -26,7 +26,7 @@ export default function Clients() {
                 Trusted Partners
               </h2>
               <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: 'var(--text-secondary)' }}>
-                We're proud to work with leading businesses across real estate, logistics, and petrochemical industries.
+                We're proud to work with leading businesses across logistics, petrochemical, and real estate industries.
               </p>
             </div>
           </FadeInOnScroll>

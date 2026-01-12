@@ -76,7 +76,7 @@ export default function About() {
             {/* First Paragraph */}
             <FadeInOnScroll direction="up" delay={0.1}>
               <p className="text-lg mb-12 leading-relaxed text-center" style={{ color: 'var(--text-secondary)' }}>
-                Founded in 2022 in Nigeria, AOM Industries has grown from a local operation to a trusted multi-industry service provider. Over the years, we have built a reputation for excellence across real estate, logistics, and petrochemical sales & supply. Our commitment to dependable delivery, professional service, and a straightforward process from first contact to final confirmation has been the cornerstone of our success.
+                Founded in 2022 in Nigeria, AOM Industries has grown from a local operation to a trusted multi-industry service provider. Over the years, we have built a reputation for excellence across logistics, petrochemical supply, and real estate. Our commitment to dependable delivery, professional service, and a straightforward process from first contact to final confirmation has been the cornerstone of our success.
               </p>
             </FadeInOnScroll>
 
@@ -101,7 +101,7 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <FadeInOnScroll direction="left" delay={0.1} className="order-2 lg:order-1 text-center md:text-left">
                 <p className="text-lg leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-                  With over a decade of experience, we have established strong relationships with clients, suppliers, and partners across various sectors. Our team brings together expertise in property management, transportation logistics, and energy supply, ensuring that every project is handled with the professionalism and attention to detail our clients expect.
+                  With over a decade of experience, we have established strong relationships with clients, suppliers, and partners across various sectors. Our team brings together expertise in transportation logistics, energy supply, and property management, ensuring that every project is handled with the professionalism and attention to detail our clients expect.
                 </p>
               </FadeInOnScroll>
               <FadeInOnScroll direction="right" delay={0.3} className="relative w-full h-64 lg:h-80 order-1 md:order-2">
@@ -139,7 +139,7 @@ export default function About() {
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-            {/* Service 01 - Real Estate */}
+            {/* Service 01 - Logistics */}
             <FadeInOnScroll direction="left" delay={0.1}>
               <div className="relative">
                 <div className="flex items-start gap-6">
@@ -147,29 +147,6 @@ export default function About() {
                   <div className="shrink-0">
                     <span className="text-8xl md:text-9xl font-bold leading-none" style={{ color: '#efdee0' }}>
                       01
-                    </span>
-                  </div>
-                  {/* Content */}
-                  <div className="flex-1 pt-4">
-                    <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
-                      Real Estate
-                    </h3>
-                    <p className="text-base md:text-md leading-normal" style={{ color: 'var(--text-secondary)' }}>
-                      We provide comprehensive real estate services including property sales, leasing, management, and advisory. Our team handles everything from property inspection to closing, ensuring a smooth and professional experience for buyers, sellers, and tenants.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </FadeInOnScroll>
-
-            {/* Service 02 - Logistics */}
-            <FadeInOnScroll direction="right" delay={0.2}>
-              <div className="relative">
-                <div className="flex items-start gap-6">
-                  {/* Large Number */}
-                  <div className="shrink-0">
-                    <span className="text-8xl md:text-9xl font-bold leading-none" style={{ color: '#efdee0' }}>
-                      02
                     </span>
                   </div>
                   {/* Content */}
@@ -185,7 +162,30 @@ export default function About() {
               </div>
             </FadeInOnScroll>
 
-            {/* Service 03 - Petrochemicals */}
+            {/* Service 02 - Petrochemicals */}
+            <FadeInOnScroll direction="right" delay={0.2}>
+              <div className="relative">
+                <div className="flex items-start gap-6">
+                  {/* Large Number */}
+                  <div className="shrink-0">
+                    <span className="text-8xl md:text-9xl font-bold leading-none" style={{ color: '#efdee0' }}>
+                      02
+                    </span>
+                  </div>
+                  {/* Content */}
+                  <div className="flex-1 pt-4">
+                    <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
+                      Petrochemical Supply
+                    </h3>
+                    <p className="text-base md:text-md leading-normal" style={{ color: 'var(--text-secondary)' }}>
+                      We supply high-quality petrochemical products for commercial and industrial needs. Our reliable supply chain and commitment to safety ensure consistent access to energy products, helping businesses maintain their operations without interruption.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </FadeInOnScroll>
+
+            {/* Service 03 - Real Estate */}
             <FadeInOnScroll direction="left" delay={0.3}>
               <div className="relative">
                 <div className="flex items-start gap-6">
@@ -198,10 +198,10 @@ export default function About() {
                   {/* Content */}
                   <div className="flex-1 pt-4">
                     <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
-                      Petrochemical Supply
+                      Real Estate
                     </h3>
                     <p className="text-base md:text-md leading-normal" style={{ color: 'var(--text-secondary)' }}>
-                      We supply high-quality petrochemical products for commercial and industrial needs. Our reliable supply chain and commitment to safety ensure consistent access to energy products, helping businesses maintain their operations without interruption.
+                      We provide comprehensive real estate services including property sales, leasing, management, and advisory. Our team handles everything from property inspection to closing, ensuring a smooth and professional experience for buyers, sellers, and tenants.
                     </p>
                   </div>
                 </div>
@@ -272,7 +272,7 @@ export default function About() {
                       Comprehensive approach
                     </h3>
                     <p className="text-base leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-                      We cover all aspects of real estate, logistics, and petrochemical supply, ensuring efficiency and quality at every stage from initial contact to final delivery.
+                      We cover all aspects of logistics, petrochemical supply, and real estate, ensuring efficiency and quality at every stage from initial contact to final delivery.
                     </p>
                   </div>
                 </div>
