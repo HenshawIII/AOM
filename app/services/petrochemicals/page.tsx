@@ -23,7 +23,7 @@ export default function Petrochemicals() {
           <div className="relative h-full w-full">
             <Image
               src="/petro.avif"
-              alt="AOM Industries Petrochemicals"
+              alt="AOM Industries petroleum products"
               fill
               className="object-cover"
             />
@@ -35,7 +35,7 @@ export default function Petrochemicals() {
           <div className="relative h-full w-full">
             <Image
               src="/industry.avif"
-              alt="AOM Industries Petrochemicals"
+              alt="AOM Industries petroleum products"
               fill
               className="object-cover"
             />
@@ -47,7 +47,7 @@ export default function Petrochemicals() {
           <div className="mb-6">
             <FadeInOnScroll direction="up" delay={0.1}>
             <h3 className="text-white! text-lg md:text-xl border-b-2 border-white font-medium relative inline-block pb-3">
-              Petrochemicals
+              Petroleum products
             </h3>
             </FadeInOnScroll>
           </div>
@@ -69,7 +69,7 @@ export default function Petrochemicals() {
           <div className="prose prose-lg max-w-none">
             <FadeInOnScroll direction="up" delay={0.2}>
             <p className="text-lg leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
-              We supply petrochemical products with structured order processing, delivery coordination, and clear communication on timelines and availability. Our petrochemical supply services provide consistent access to high-quality energy products for commercial and industrial operations across Nigeria.
+              We supply petroleum products with structured order processing, delivery coordination, and clear communication on timelines and availability. Our petroleum products supply services provide consistent access to high-quality energy products for commercial and industrial operations across Nigeria.
             </p>
             </FadeInOnScroll>
             <FadeInOnScroll direction="up" delay={0.3}>
@@ -123,7 +123,7 @@ export default function Petrochemicals() {
       </section>
 
       <CTASection
-        title="Need petrochemical supply?"
+        title="Need petroleum products supply?"
         description="Tell us what you need and we'll respond with a clear plan and quote."
         ctaText={ctaTexts.requestSupply}
         ctaHref="/contact"

@@ -17,7 +17,7 @@ const spectral = Spectral({
 });
 
 export const metadata: Metadata = {
-  title: "AOM Industries - Logistics • Petrochemical Supply • Real Estate",
+  title: "AOM Industries - Logistics • Petroleum Products Supply • Real Estate",
   description: "We provide dependable services across transportation , property and energy products—built on safety, speed, and clear communication.",
   icons: {
     icon: "/lgo.svg",

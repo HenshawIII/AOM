@@ -76,7 +76,7 @@ export default function About() {
             {/* First Paragraph */}
             <FadeInOnScroll direction="up" delay={0.1}>
               <p className="text-lg mb-12 leading-relaxed text-center" style={{ color: 'var(--text-secondary)' }}>
-                Founded in 2022 in Nigeria, AOM Industries has grown from a local operation to a trusted multi-industry service provider. Over the years, we have built a reputation for excellence across logistics, petrochemical supply, and real estate. Our commitment to dependable delivery, professional service, and a straightforward process from first contact to final confirmation has been the cornerstone of our success.
+                Founded in 2022 in Nigeria, AOM Industries has grown from a local operation to a trusted multi-industry service provider. Over the years, we have built a reputation for excellence across logistics, petroleum products supply, and real estate. Our commitment to dependable delivery, professional service, and a straightforward process from first contact to final confirmation has been the cornerstone of our success.
               </p>
             </FadeInOnScroll>
 
@@ -107,7 +107,7 @@ export default function About() {
               <FadeInOnScroll direction="right" delay={0.3} className="relative w-full h-64 lg:h-80 order-1 md:order-2">
                 <Image
                   src="/petro.avif"
-                  alt="Petrochemical Operations"
+                  alt="Petroleum products operations"
                   fill
                   className="object-cover rounded-lg"
                 />
@@ -162,7 +162,7 @@ export default function About() {
               </div>
             </FadeInOnScroll>
 
-            {/* Service 02 - Petrochemicals */}
+            {/* Service 02 - Petroleum products */}
             <FadeInOnScroll direction="right" delay={0.2}>
               <div className="relative">
                 <div className="flex items-start gap-6">
@@ -175,10 +175,10 @@ export default function About() {
                   {/* Content */}
                   <div className="flex-1 pt-4">
                     <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
-                      Petrochemical Supply
+                      Petroleum Products Supply
                     </h3>
                     <p className="text-base md:text-md leading-normal" style={{ color: 'var(--text-secondary)' }}>
-                      We supply high-quality petrochemical products for commercial and industrial needs. Our reliable supply chain and commitment to safety ensure consistent access to energy products, helping businesses maintain their operations without interruption.
+                      We supply high-quality petroleum products for commercial and industrial needs. Our reliable supply chain and commitment to safety ensure consistent access to energy products, helping businesses maintain their operations without interruption.
                     </p>
                   </div>
                 </div>
@@ -224,7 +224,7 @@ export default function About() {
                       Business Consultation
                     </h3>
                     <p className="text-base md:text-md leading-normal" style={{ color: 'var(--text-secondary)' }}>
-                      Our expert consultants provide strategic advice and solutions tailored to your business needs. Whether you're looking to invest in real estate, optimize your supply chain, or navigate the petrochemical market, we offer insights and guidance to help you make informed decisions.
+                      Our expert consultants provide strategic advice and solutions tailored to your business needs. Whether you're looking to invest in real estate, optimize your supply chain, or navigate the petroleum products market, we offer insights and guidance to help you make informed decisions.
                     </p>
                   </div>
                 </div>
@@ -272,7 +272,7 @@ export default function About() {
                       Comprehensive approach
                     </h3>
                     <p className="text-base leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-                      We cover all aspects of logistics, petrochemical supply, and real estate, ensuring efficiency and quality at every stage from initial contact to final delivery.
+                      We cover all aspects of logistics, petroleum products supply, and real estate, ensuring efficiency and quality at every stage from initial contact to final delivery.
                     </p>
                   </div>
                 </div>

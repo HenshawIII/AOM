@@ -187,7 +187,7 @@ export default function ContactForm() {
           >
             <option value="">Select a service</option>
             <option value="logistics">Logistics</option>
-            <option value="petrochemicals">Petrochemicals</option>
+            <option value="petrochemicals">Petroleum products</option>
             <option value="real-estate">Real Estate</option>
           </select>
           {errors.service && (

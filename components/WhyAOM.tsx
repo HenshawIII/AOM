@@ -23,7 +23,7 @@ export default function WhyAOM() {
 
             {/* Paragraph 1 */}
             <p className="text-md leading-normal" style={{ color: 'var(--text-secondary)' }}>
-              We specialize in providing comprehensive logistics, petrochemical supply, and real estate services, designed to keep your operations running smoothly, efficiently, and with complete transparency.
+              We specialize in providing comprehensive logistics, petroleum products supply, and real estate services, designed to keep your operations running smoothly, efficiently, and with complete transparency.
             </p>
 
             {/* Paragraph 2 */}

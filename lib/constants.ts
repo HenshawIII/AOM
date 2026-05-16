@@ -12,7 +12,7 @@ export const navigationItems: NavigationItem[] = [
     href: "/services",
     dropdown: [
       { label: "Logistics", href: "/services/logistics" },
-      { label: "Petrochemicals", href: "/services/petrochemicals" },
+      { label: "Petroleum products", href: "/services/petrochemicals" },
       { label: "Real Estate", href: "/services/real-estate" },
      
     ]
@@ -35,12 +35,12 @@ export const services = {
     ],
   },
   petrochemicals: {
-    title: "Petrochemical Supply & Haulage",
-    description: "Specialized petrochemical haulage and distribution services for PMS, AGO, LPFO, and Ethanol, ensuring safe and efficient transportation.",
+    title: "Petroleum Products Supply & Haulage",
+    description: "Specialized petroleum products haulage and distribution services for PMS, AGO, LPFO, and Ethanol, ensuring safe and efficient transportation.",
     href: "/services/petrochemicals",
     image: "/petro.avif",
     features: [
-      "Petrochemical Haulage & Transportation",
+      "Petroleum Products Haulage & Transportation",
       "PMS Supply & Distribution",
       "AGO (Diesel) Haulage & Delivery",
       "LPFO & Industrial Fuel Transportation",
@@ -109,7 +109,7 @@ export const ctaTexts = {
 export const stats = [
   {
     number: "100+",
-    description: "We supply over 100 tonnes of petrochemicals annually",
+    description: "We supply over 100 tonnes of petroleum products annually",
   },
   {
     number: "5+",
