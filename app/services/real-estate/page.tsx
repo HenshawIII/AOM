@@ -4,6 +4,17 @@ import { ctaTexts } from "@/lib/constants";
 import Image from "next/image";
 
 export default function RealEstate() {
+  const offerings = [
+    "Property Sales, Acquisitions & Rentals",
+    "Property Off-Take from Carcass Stage to Completion",
+    "Construction Support & Project Coordination",
+    "Marine Board Supply for Concrete Formwork",
+    "Building-Material Supply: Cement, Granite, Sharp Sand & Other Aggregates",
+    "Real Estate Investment Consulting",
+    "Property Valuation & Advisory",
+    "Facility & Tenant Management",
+  ];
+
   return (
     <>
       {/* Custom Hero Section */}
@@ -67,7 +78,7 @@ export default function RealEstate() {
           <div className="prose prose-lg max-w-none">
             <FadeInOnScroll direction="up" delay={0.2}>
             <p className="text-lg leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
-              We support clients with real estate transactions and property needs through a structured, professional process. From property sourcing and acquisition to leasing, management, and advisory services, we handle every aspect with attention to detail and clear communication.
+              We provide comprehensive real estate, construction-support and property-management services from acquisition and project off-take at the carcass stage through completion, occupancy and ongoing management.
             </p>
             </FadeInOnScroll>
             <FadeInOnScroll direction="up" delay={0.3}>
@@ -93,91 +104,25 @@ export default function RealEstate() {
             What We Offer
           </h2>
           <ul className="space-y-4">
-            <li className="flex items-start">
-              <svg
-                className="w-6 h-6 mr-3 shrink-0 mt-1"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                style={{ color: 'var(--accent)' }}
-              >
-                <path d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span className="text-lg" style={{ color: 'var(--text-secondary)' }}>
-                Property sales & acquisitions
-              </span>
-            </li>
-            <li className="flex items-start">
-              <svg
-                className="w-6 h-6 mr-3 shrink-0 mt-1"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                style={{ color: 'var(--accent)' }}
-              >
-                <path d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span className="text-lg" style={{ color: 'var(--text-secondary)' }}>
-                Leasing support
-              </span>
-            </li>
-            <li className="flex items-start">
-              <svg
-                className="w-6 h-6 mr-3 shrink-0 mt-1"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                style={{ color: 'var(--accent)' }}
-              >
-                <path d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span className="text-lg" style={{ color: 'var(--text-secondary)' }}>
-                Property management support
-              </span>
-            </li>
-            <li className="flex items-start">
-              <svg
-                className="w-6 h-6 mr-3 shrink-0 mt-1"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                style={{ color: 'var(--accent)' }}
-              >
-                <path d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span className="text-lg" style={{ color: 'var(--text-secondary)' }}>
-                Property inspections and site visits
-              </span>
-            </li>
-            <li className="flex items-start">
-              <svg
-                className="w-6 h-6 mr-3 shrink-0 mt-1"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                style={{ color: 'var(--accent)' }}
-              >
-                <path d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span className="text-lg" style={{ color: 'var(--text-secondary)' }}>
-                Advisory and transaction support
-              </span>
-            </li>
+            {offerings.map((offering) => (
+              <li key={offering} className="flex items-start">
+                <svg
+                  className="w-6 h-6 mr-3 shrink-0 mt-1"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  style={{ color: 'var(--accent)' }}
+                >
+                  <path d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span className="text-lg" style={{ color: 'var(--text-secondary)' }}>
+                  {offering}
+                </span>
+              </li>
+            ))}
           </ul>
         </div>
         </FadeInOnScroll>

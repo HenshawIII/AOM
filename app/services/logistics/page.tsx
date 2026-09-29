@@ -4,6 +4,15 @@ import { ctaTexts } from "@/lib/constants";
 import Image from "next/image";
 
 export default function Logistics() {
+  const offerings = [
+    "Energy-product logistics: Aviation Turbine Kerosene (Jet A1), Automotive Gas Oil (AGO) and Premium Motor Spirit (PMS)",
+    "Solid-mineral haulage: feldspar, clay, mica and quartz",
+    "Quarry-aggregate transportation: granite, hardcore, stone base, dust and other aggregates",
+    "Industrial cargo transportation, including plywood boards",
+    "Warehousing and storage solutions",
+    "Delivery tracking and operational updates",
+  ];
+
   return (
     <>
       {/* Custom Hero Section */}
@@ -67,7 +76,7 @@ export default function Logistics() {
           <div className="prose prose-lg max-w-none">
             <FadeInOnScroll direction="up" delay={0.2}>
             <p className="text-lg leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
-              We provide logistics support designed for reliability—planned timelines, structured operations, and responsive communication. Our logistics services ensure that your goods are transported safely, efficiently, and on schedule across Nigeria, with clear updates throughout the delivery process.
+              We provide specialised energy, solid-mineral and heavy-duty transportation services, ensuring safe, timely and accountable delivery with real-time tracking and clear operational updates.
             </p>
             </FadeInOnScroll>
             <FadeInOnScroll direction="up" delay={0.3}>
@@ -90,77 +99,28 @@ export default function Logistics() {
         <FadeInOnScroll delay={0.2} direction="left">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-8" style={{ color: 'var(--text-primary)' }}>
-            What We Offer
+            Our logistics services cover
           </h2>
           <ul className="space-y-4">
-            <li className="flex items-start">
-              <svg
-                className="w-6 h-6 mr-3 shrink-0 mt-1"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                style={{ color: 'var(--accent)' }}
-              >
-                <path d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span className="text-lg" style={{ color: 'var(--text-secondary)' }}>
-                Delivery planning and scheduling
-              </span>
-            </li>
-            <li className="flex items-start">
-              <svg
-                className="w-6 h-6 mr-3 shrink-0 mt-1"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                style={{ color: 'var(--accent)' }}
-              >
-                <path d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span className="text-lg" style={{ color: 'var(--text-secondary)' }}>
-                Local and regional haulage support
-              </span>
-            </li>
-            <li className="flex items-start">
-              <svg
-                className="w-6 h-6 mr-3 shrink-0 mt-1"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                style={{ color: 'var(--accent)' }}
-              >
-                <path d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span className="text-lg" style={{ color: 'var(--text-secondary)' }}>
-                Proof of delivery and confirmation
-              </span>
-            </li>
-            <li className="flex items-start">
-              <svg
-                className="w-6 h-6 mr-3 shrink-0 mt-1"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                style={{ color: 'var(--accent)' }}
-              >
-                <path d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span className="text-lg" style={{ color: 'var(--text-secondary)' }}>
-                Business logistics support and coordination
-              </span>
-            </li>
+            {offerings.map((offering) => (
+              <li key={offering} className="flex items-start">
+                <svg
+                  className="w-6 h-6 mr-3 shrink-0 mt-1"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  style={{ color: 'var(--accent)' }}
+                >
+                  <path d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span className="text-lg" style={{ color: 'var(--text-secondary)' }}>
+                  {offering}
+                </span>
+              </li>
+            ))}
           </ul>
         </div>
         </FadeInOnScroll>

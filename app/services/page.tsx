@@ -85,6 +85,16 @@ export default function Services() {
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
 
           
+
+          <ServiceCard
+              title={services.petrochemicals.title}
+              description={services.petrochemicals.description}
+              href={services.petrochemicals.href}
+              image={services.petrochemicals.image}
+              features={services.petrochemicals.features}
+            />
+
+            
           <ServiceCard
               title={services.logistics.title}
               description={services.logistics.description}
@@ -93,13 +103,7 @@ export default function Services() {
               features={services.logistics.features}
             />
             
-            <ServiceCard
-              title={services.petrochemicals.title}
-              description={services.petrochemicals.description}
-              href={services.petrochemicals.href}
-              image={services.petrochemicals.image}
-              features={services.petrochemicals.features}
-            />
+            
             <ServiceCard
               title={services.realEstate.title}
               description={services.realEstate.description}

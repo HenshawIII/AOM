@@ -18,17 +18,17 @@ export default function WhyAOM() {
 
             {/* Main Headline */}
             <h2 className="text-2xl md:text-3xl font-bold leading-tight" style={{ color: 'var(--text-primary)' }}>
-              With us, your business becomes more efficient, reliable, and successful
+              Powering Businesses. Moving Resources. Building Value.
             </h2>
 
             {/* Paragraph 1 */}
             <p className="text-md leading-normal" style={{ color: 'var(--text-secondary)' }}>
-              We specialize in providing comprehensive logistics, petroleum products supply, and real estate services, designed to keep your operations running smoothly, efficiently, and with complete transparency.
+              We deliver integrated solutions across energy, logistics and real estate, helping businesses access dependable energy products, move essential materials and develop or manage valuable property assets.
             </p>
 
             {/* Paragraph 2 */}
             <p className="text-md leading-normal" style={{ color: 'var(--text-secondary)' }}>
-              Our services provide high-quality solutions, ranging from timely logistics delivery to reliable energy product supply to property management and sales for commercial and industrial needs.
+              From petroleum-product supply and complex haulage operations to construction support and property services, we bring strong coordination, transparency and accountability to every engagement.
             </p>
 
             {/* CTA Button */}
@@ -61,7 +61,7 @@ export default function WhyAOM() {
             {/* Right Image */}
             <div className="relative flex-1 rounded-lg overflow-hidden translate-y-10">
               <Image
-                src="/real3.avif"
+                src="/aom3.jpeg"
                 alt="AOM Industries Operations"
                 fill
                 className="object-cover"

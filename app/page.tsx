@@ -11,8 +11,8 @@ import type { HeroSlide } from "@/components/Hero";
 const heroSlides: HeroSlide[] = [
   {
     title: "AOM Industries",
-    subtitle: "Logistics • Petroleum Products Supply • Real Estate",
-    description: "We provide dependable services across property, transportation, and energy products—built on safety, speed, and clear communication.",
+    subtitle: "Energy • Logistics • Real Estate",
+    description: "We provide dependable services across energy, logistics, and real estate sectors, built on safety, speed, and clear communication.",
     primaryCTA: {
       text: ctaTexts.requestQuote,
       href: "/contact",
@@ -26,7 +26,7 @@ const heroSlides: HeroSlide[] = [
   {
     title: "Built for Execution",
     subtitle: "Reliable • Professional • Efficient",
-    description: "We operate with structured processes, responsive communication, and a safety-first mindset—so you can plan confidently and get results without delays.",
+    description: "We operate with structured processes, responsive communication, and a safety first mindset so you can plan confidently and get results without delays.",
     primaryCTA: {
       text: ctaTexts.requestQuote,
       href: "/contact",
@@ -40,7 +40,7 @@ const heroSlides: HeroSlide[] = [
   {
     title: "Your Trusted Partner",
     subtitle: "Safety • Speed • Clear Communication",
-    description: "Clear timelines, transparent documentation, and professional operations across logistics, petroleum products supply, and real estate.",
+    description: "Clear timelines, transparent documentation, and professional operations across energy, logistics, and real estate sectors.",
     primaryCTA: {
       text: ctaTexts.requestQuote,
       href: "/contact",
@@ -85,6 +85,15 @@ export default function Home() {
 
           {/* Service Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+
+          <ServiceCard
+                title={services.petrochemicals.title}
+                description={services.petrochemicals.description}
+                href={services.petrochemicals.href}
+                image={services.petrochemicals.image}
+                features={services.petrochemicals.features}
+              />
             
               <ServiceCard
                 title={services.logistics.title}
@@ -94,13 +103,6 @@ export default function Home() {
                 features={services.logistics.features}
               />
          
-              <ServiceCard
-                title={services.petrochemicals.title}
-                description={services.petrochemicals.description}
-                href={services.petrochemicals.href}
-                image={services.petrochemicals.image}
-                features={services.petrochemicals.features}
-              />
            
             
               <ServiceCard

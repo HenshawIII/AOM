@@ -11,8 +11,8 @@ export const navigationItems: NavigationItem[] = [
     label: "Our Businesses", 
     href: "/services",
     dropdown: [
+      { label: "Energy", href: "/services/petrochemicals" },
       { label: "Logistics", href: "/services/logistics" },
-      { label: "Petroleum products", href: "/services/petrochemicals" },
       { label: "Real Estate", href: "/services/real-estate" },
      
     ]
@@ -24,38 +24,38 @@ export const navigationItems: NavigationItem[] = [
 export const services = {
   logistics: {
     title: "Logistics",
-    description: "Specialized solid mineral haulage and heavy-duty transportation services with planned and timely movement, clear updates, and accountable delivery.",
+    description: "Specialised energy, solid-mineral and heavy-duty transportation services, ensuring safe, timely and accountable delivery with real-time tracking and clear operational updates.",
     href: "/services/logistics",
-    image: "/industry.avif",
+    image: "/AOM2.jpeg",
     features: [
-      "Solid Mineral Haulage & Transportation",
-      "Heavy-Duty Cargo Movement",
-      "Warehouse & Storage Solutions",
-      "Delivery Tracking & Updates",
+      "Energy-Product Logistics (Jet A1, AGO, PMS)",
+      "Solid-Mineral & Quarry-Aggregate Haulage",
+      "Industrial Cargo Transportation",
+      "Warehousing, Storage & Delivery Tracking",
     ],
   },
   petrochemicals: {
-    title: "Petroleum Products Supply & Haulage",
-    description: "Specialized petroleum products haulage and distribution services for PMS, AGO, LPFO, and Ethanol, ensuring safe and efficient transportation.",
+    title: "Energy",
+    description: "Reliable supply and distribution services for petroleum and energy products, ensuring safe handling, efficient transportation and timely delivery to aviation, industrial and commercial customers.",
     href: "/services/petrochemicals",
-    image: "/petro.avif",
+    image: "/AOM1.jpeg",
     features: [
-      "Petroleum Products Haulage & Transportation",
+      "Jet A1 Supply & Logistics",
       "PMS Supply & Distribution",
-      "AGO (Diesel) Haulage & Delivery",
-      "LPFO & Industrial Fuel Transportation",
+      "AGO (Diesel) Supply & Delivery",
+      "LPFO & Petroleum Tanker Haulage",
     ],
   },
   realEstate: {
     title: "Real Estate",
-    description: "Property sales, leasing, management, and advisory—handled professionally from inspection to closing.",
+    description: "Comprehensive real estate, construction-support and property-management services, from acquisition and carcass-stage off-take through completion, occupancy and ongoing management.",
     href: "/services/real-estate",
-    image: "/real3.avif",
+    image: "/aom3.jpeg",
     features: [
-      "Property Sales & Acquisition",
-      "Leasing & Tenant Management",
-      "Property Valuation & Advisory",
-      "Real Estate Investment Consulting",
+      "Property Sales, Acquisitions & Rentals",
+      "Carcass-Stage Off-Take & Construction Support",
+      "Building-Material & Marine Board Supply",
+      "Valuation, Investment Consulting & Facility Management",
     ],
   }
  
@@ -95,6 +95,7 @@ export const contactInfo = {
   whatsapp: "[add number]",
   email: "info@aomindustries.com",
   address: "[add address]",
+  instagram: "https://www.instagram.com/aom_industries/",
 };
 
 export const ctaTexts = {
@@ -108,16 +109,16 @@ export const ctaTexts = {
 
 export const stats = [
   {
-    number: "100+",
-    description: "We supply over 100 tonnes of petroleum products annually",
+    number: "5M+",
+    description: "Over 5 million litres of petroleum products delivered annually",
   },
   {
     number: "5+",
     description: "With over 5 years experience across industries",
   },
   {
-    number: "30+",
-    description: "Over 30 properties developed nation wide",
+    number: "15+",
+    description: "Over 15 properties developed nationwide",
   },
 ];
 
@@ -155,6 +156,11 @@ export const teamMembers: TeamMember[] = [
     role: "Chief Technology Officer",
     image: "/cTn.png",
     linkedinUrl: "https://linkedin.com/in/sarah-johnson",
+  },
+  {
+    name: "Ogunwole Iyanuoluwa",
+    role: "Chief Finance Officer",
+    image: "",
   },
   {
     name: "Afeaye Ernest",  

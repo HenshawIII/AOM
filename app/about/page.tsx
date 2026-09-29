@@ -76,7 +76,7 @@ export default function About() {
             {/* First Paragraph */}
             <FadeInOnScroll direction="up" delay={0.1}>
               <p className="text-lg mb-12 leading-relaxed text-center" style={{ color: 'var(--text-secondary)' }}>
-                Founded in 2022 in Nigeria, AOM Industries has grown from a local operation to a trusted multi-industry service provider. Over the years, we have built a reputation for excellence across logistics, petroleum products supply, and real estate. Our commitment to dependable delivery, professional service, and a straightforward process from first contact to final confirmation has been the cornerstone of our success.
+                Founded in 2021 in Nigeria, AOM Industries has grown from a local operation to a trusted multi-industry service provider. Over the years, we have built a reputation for excellence across energy supply, logistics, and real estate sectors. Our commitment to dependable delivery, professional service, and a straightforward process from first contact to final confirmation has been the cornerstone of our success.
               </p>
             </FadeInOnScroll>
 
@@ -101,7 +101,7 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <FadeInOnScroll direction="left" delay={0.1} className="order-2 lg:order-1 text-center md:text-left">
                 <p className="text-lg leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-                  With over a decade of experience, we have established strong relationships with clients, suppliers, and partners across various sectors. Our team brings together expertise in transportation logistics, energy supply, and property management, ensuring that every project is handled with the professionalism and attention to detail our clients expect.
+                  With over half a decade of experience, we have established strong relationships with clients, suppliers, and partners across various sectors. Our team brings together expertise in transportation logistics, energy supply, and property management, ensuring that every project is handled with the professionalism and attention to detail our clients expect.
                 </p>
               </FadeInOnScroll>
               <FadeInOnScroll direction="right" delay={0.3} className="relative w-full h-64 lg:h-80 order-1 md:order-2">
@@ -139,7 +139,7 @@ export default function About() {
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-            {/* Service 01 - Logistics */}
+            {/* Service 01 - Energy */}
             <FadeInOnScroll direction="left" delay={0.1}>
               <div className="relative">
                 <div className="flex items-start gap-6">
@@ -152,17 +152,17 @@ export default function About() {
                   {/* Content */}
                   <div className="flex-1 pt-4">
                     <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
-                      Logistics & Transportation
+                      Energy
                     </h3>
                     <p className="text-base md:text-md leading-normal" style={{ color: 'var(--text-secondary)' }}>
-                      Our logistics services ensure timely and secure delivery of goods across Nigeria. We manage transportation, warehousing, and distribution with a focus on efficiency, safety, and reliability to keep your operations running smoothly.
+                      We supply high-quality petroleum products for commercial and industrial needs. Our reliable supply chain and commitment to safety ensure consistent access to energy products, helping businesses maintain their operations without interruption.
                     </p>
                   </div>
                 </div>
               </div>
             </FadeInOnScroll>
 
-            {/* Service 02 - Petroleum products */}
+            {/* Service 02 - Logistics */}
             <FadeInOnScroll direction="right" delay={0.2}>
               <div className="relative">
                 <div className="flex items-start gap-6">
@@ -175,10 +175,10 @@ export default function About() {
                   {/* Content */}
                   <div className="flex-1 pt-4">
                     <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
-                      Petroleum Products Supply
+                      Logistics & Transportation
                     </h3>
                     <p className="text-base md:text-md leading-normal" style={{ color: 'var(--text-secondary)' }}>
-                      We supply high-quality petroleum products for commercial and industrial needs. Our reliable supply chain and commitment to safety ensure consistent access to energy products, helping businesses maintain their operations without interruption.
+                      Our logistics services ensure timely and secure delivery of goods across Nigeria. We manage transportation, warehousing, and distribution with a focus on efficiency, safety, and reliability to keep your operations running smoothly.
                     </p>
                   </div>
                 </div>

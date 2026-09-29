@@ -4,7 +4,13 @@ import { ctaTexts } from "@/lib/constants";
 import Image from "next/image";
 
 export default function Petrochemicals() {
-  const products = ["PMS", "AGO (Diesel)", "LPFO", "Ethanol"];
+  const products = [
+    "Aviation Turbine Kerosene (Jet A1) Supply & Logistics",
+    "Premium Motor Spirit (PMS) Supply & Distribution",
+    "Automotive Gas Oil (AGO/Diesel) Supply & Delivery",
+    "Low Pour Fuel Oil (LPFO) & Industrial Fuel Transportation",
+    "Petroleum Tanker Haulage & Delivery Coordination",
+  ];
 
   return (
     <>
@@ -47,7 +53,7 @@ export default function Petrochemicals() {
           <div className="mb-6">
             <FadeInOnScroll direction="up" delay={0.1}>
             <h3 className="text-white! text-lg md:text-xl border-b-2 border-white font-medium relative inline-block pb-3">
-              Petroleum products
+              Energy
             </h3>
             </FadeInOnScroll>
           </div>
@@ -69,12 +75,12 @@ export default function Petrochemicals() {
           <div className="prose prose-lg max-w-none">
             <FadeInOnScroll direction="up" delay={0.2}>
             <p className="text-lg leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
-              We supply petroleum products with structured order processing, delivery coordination, and clear communication on timelines and availability. Our petroleum products supply services provide consistent access to high-quality energy products for commercial and industrial operations across Nigeria.
+              We provide reliable supply and distribution services for petroleum and energy products, ensuring safe handling, efficient transportation and timely delivery to aviation, industrial and commercial customers.
             </p>
             </FadeInOnScroll>
             <FadeInOnScroll direction="up" delay={0.3}>
             <p className="text-lg leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
-              We maintain reliable supply chains for Premium Motor Spirit (PMS), Automotive Gas Oil (AGO/Diesel), Low Pour Fuel Oil (LPFO), and Ethanol, ensuring your operations never face interruptions due to fuel shortages. Our structured approach includes inventory management, quality assurance, and timely delivery coordination.
+              We maintain reliable supply chains for Aviation Turbine Kerosene (Jet A1), Premium Motor Spirit (PMS), Automotive Gas Oil (AGO/Diesel) and Low Pour Fuel Oil (LPFO), ensuring your operations never face interruptions due to fuel shortages. Our structured approach includes inventory management, quality assurance, and timely delivery coordination.
             </p>
             </FadeInOnScroll>
             <FadeInOnScroll direction="up" delay={0.4}>
@@ -92,7 +98,7 @@ export default function Petrochemicals() {
         <FadeInOnScroll delay={0.2} direction="left">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-8" style={{ color: 'var(--text-primary)' }}>
-            Products We Supply
+            What We Offer
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {products.map((product) => (
