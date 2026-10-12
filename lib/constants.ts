@@ -128,6 +128,7 @@ export const clients = [
   { name: "Ibwas", logo: "/IBWA.png" },
   { name: "Nepal", logo: "/NEPA.png" },
   { name: "Lafarge", logo: "/LAFARG.png" },
+  { name: "Sahara", logo: "/sahara.png" },
  
 ];
 
