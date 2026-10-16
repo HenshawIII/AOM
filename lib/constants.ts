@@ -94,7 +94,7 @@ export const contactInfo = {
   phone: "+234 911 555 0097",
   whatsapp: "[add number]",
   email: "info@aomindustries.com",
-  address: "[add address]",
+  address: "114 A&B Ilupeju Street, Dolphin Estate, Ikoyi",
   instagram: "https://www.instagram.com/aom_industries/",
 };
 

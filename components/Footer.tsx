@@ -72,6 +72,9 @@ export default function Footer() {
               <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
                 <span className="font-medium">Phone:</span> {contactInfo.phone}
               </p>
+              <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
+                <span className="font-medium">Address:</span> {contactInfo.address}
+              </p>
             </div>
             
             

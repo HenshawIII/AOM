@@ -305,7 +305,7 @@ export default function Contact() {
                   Location:
                 </h3>
                 <p className="text-base leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-                 Onikoko , Ogun State , Nigeria
+                 {contactInfo.address}
                 </p>
               </div>
             </FadeInOnScroll>
